@@ -1,0 +1,84 @@
+/* Settings page layout */
+.settings {
+    margin-top: 80px; /* Adds space below the navbar */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #f9f9f9; /* Optional: background for contrast */
+    min-height: 100vh; /* Ensures the page takes up full height */
+  }
+  
+  /* Style for headings */
+  .settings h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Individual settings option */
+  .settings-option {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Labels in settings */
+  .settings-option label {
+    font-size: 1.2rem;
+    margin-right: 10px;
+  }
+  
+  /* Button styling */
+  .settings-option button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .settings-option button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Dropdown (select box) styling */
+  .settings-option select {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #3498db;
+  }
+  
+  /* Summary section */
+  .settings-summary {
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  
+  /* Responsive behavior */
+  @media (max-width: 768px) {
+    .settings {
+      padding: 15px;
+      margin-top: 80px; /* Adjusted margin-top for smaller screens */
+    }
+  
+    .settings h1 {
+      font-size: 1.8rem;
+    }
+  
+    .settings-option {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .settings-option label {
+      margin-bottom: 5px;
+    }
+  
+    .settings-option select,
+    .settings-option button {
+      width: 100%; /* Full width for dropdown and button on small screens */
+    }
+  }
+  

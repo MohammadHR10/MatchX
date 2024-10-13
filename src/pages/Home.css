@@ -1,0 +1,36 @@
+/* Container to center the content */
+.home-container {
+    display: flex;
+    flex-direction: column;  /* Stack the image and text vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* Full height of the viewport */
+    text-align: center;
+    padding: 20px;
+    
+    /* Set the background color to a lighter yellow */
+    background-color: #fff9db;  /* Muted light yellow background */
+  }
+  
+  /* Logo image styling */
+  .home-logo {
+    max-width: 100%;  /* Ensure the logo is responsive */
+    height: auto;     /* Maintain the aspect ratio */
+    max-height: 300px; /* Adjust the max height to control the size */
+    margin-bottom: 20px;  /* Space between the logo and the text */
+  }
+  
+  /* Heading styling */
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px; /* Space between heading and paragraph */
+    color: #333;  /* Dark text color for contrast */
+  }
+  
+  /* Paragraph styling */
+  p {
+    font-size: 1.5rem;
+    color: #555;  /* Slightly lighter color for paragraph text */
+    max-width: 600px;  /* Limit the width of the text for better readability */
+  }
+  

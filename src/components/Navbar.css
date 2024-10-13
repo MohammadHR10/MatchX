@@ -1,0 +1,109 @@
+/* Navbar with flexbox */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Dark background for contrast */
+    height: 60px;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  /* Logo container */
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* MatchX logo with gradient, fallback color, and glow effect */
+  .logo-text {
+    font-size: 2.5rem; /* Adjust font size */
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b, #ffcc00, #00ff99); /* Gradient effect */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: white; /* Fallback solid color */
+    animation: gradient-flow 5s ease infinite, scale-up 1s ease-out, glow-pulse 2s ease-in-out infinite alternate;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6); /* Constant glow effect */
+  }
+  
+  /* Gradient flowing animation */
+  @keyframes gradient-flow {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  /* Glow pulse effect */
+  @keyframes glow-pulse {
+    0% {
+      text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+    }
+    100% {
+      text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);
+    }
+  }
+  
+  /* Scale-up animation on load */
+  @keyframes scale-up {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Navigation links */
+  .nav-links {
+    display: flex;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 18px;
+  }
+  
+  .nav-links a:hover {
+    background-color: #555;
+    color: white;
+    border-radius: 4px;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      height: auto;
+      padding: 10px 20px;
+    }
+  
+    .nav-links {
+      flex-direction: column; /* Stack links vertically on mobile */
+      width: 100%; /* Full width for links */
+    }
+  
+    .nav-links a {
+      padding: 10px 0; /* Adjust padding for mobile */
+      text-align: center; /* Center the text on mobile */
+      width: 100%; /* Make links take full width on mobile */
+    }
+  
+    .logo-text {
+      font-size: 20px; /* Adjust the logo size for mobile */
+    }
+  }
+  

@@ -6,9 +6,17 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import AppRoutes from './routes';
 
-ReactDOM.render(
+{/*ReactDOM.render(
   <React.StrictMode>
+<<<<<<< HEAD
     <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
+=======
+    <AppRoutes />
+  </React.StrictMode>
+);*/}
+
+ReactDOM.render(<App />, document.getElementById('root'));
+>>>>>>> 75a4563 (Done)

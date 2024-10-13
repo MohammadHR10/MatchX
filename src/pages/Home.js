@@ -1,12 +1,22 @@
 import React from 'react';
+import './Home.css';
+import logo from '../components/matchxlogo.png';  // Correct path from pages to components
 
-function Home() {
+const Home = () => {
   return (
-    <div>
-      <h1>Welcome to the Sports Collaboration Platform</h1>
-      <p>Find collaborators for your favorite sports!</p>
+    <div className="home-container">
+      {/* Display the logo image */}
+      <img 
+        src={logo}  // Use the imported image here
+        alt="MatchX Logo"
+        className="home-logo" 
+      />
+      
+      {/* Text content */}
+      <h1>Welcome to MatchX: A Collaboration Platform</h1>
+      <p>Find people to collaborate with based on your interests!</p>
     </div>
   );
-}
+};
 
 export default Home;

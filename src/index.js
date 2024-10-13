@@ -15,8 +15,3 @@ import AppRoutes from './routes';
 );*/}
 
 ReactDOM.render(<App />, document.getElementById('root'));
-    <AppRoutes />
-  </React.StrictMode>
-);*/}
-
-ReactDOM.render(<App />, document.getElementById('root'));

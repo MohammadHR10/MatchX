@@ -1,20 +1,12 @@
 import React from 'react';
+import './Topbar.css';
 
 const Topbar = () => {
   return (
-    <header style={styles.topbar}>
-      <h1>f</h1>
+    <header className="topbar">
+      <h1>Profile</h1>
     </header>
   );
-};
-
-const styles = {
-  topbar: {
-    backgroundColor: '#4CAF50',
-    color: '#fff',
-    padding: '1rem',
-    textAlign: 'center',
-  },
 };
 
 export default Topbar;

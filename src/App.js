@@ -1,13 +1,19 @@
 import React from 'react';
-import AppRoutes from './routes';  // Import the routes you set up
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Profile from './pages/Profile'; // Adjust the path as per your project structure
 import './App.css';
-         // Import the global styles if any
 
 function App() {
   return (
-    <div className="App">
-      <AppRoutes />  {/* This will display the routes */}
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          {/* The "element" prop is used instead of "component" */}
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/" element={<h1>Home Page</h1>} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

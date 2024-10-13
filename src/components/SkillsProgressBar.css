@@ -1,0 +1,35 @@
+.skills-section {
+    margin-top: 30px;
+  }
+  
+  .skill {
+    margin-bottom: 20px;
+  }
+  
+  .progress-bar {
+    background-color: #ffefa7;
+    border-radius: 20px;
+    height: 10px;
+    width: 100%;
+  }
+  
+  .progress {
+    height: 100%;
+    border-radius: 20px;
+  }
+  
+  .js {
+    width: 80%;
+    background-color: #fd9b85;
+  }
+  
+  .react {
+    width: 70%;
+    background-color: #fd9b85;
+  }
+  
+  .python {
+    width: 90%;
+    background-color: #fd9b85;
+  }
+  

@@ -1,0 +1,12 @@
+.topbar {
+    background: linear-gradient(135deg, #fd9b85 0%, #ffefa7 100%);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  

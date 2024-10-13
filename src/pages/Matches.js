@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Matches.css';  // Import the CSS
-import Inbox from '/Users/mohammad/Downloads/MatchX/src/components/Inbox.js'; // Adjust the path based on your directory structure
+import Inbox from '../components/Inbox'; // Adjust the path based on your directory structure
 
 function Matches() {
   // State for user posts, inbox, and category

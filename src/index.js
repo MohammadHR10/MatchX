@@ -19,4 +19,4 @@ import AppRoutes from './routes';
 );*/}
 
 ReactDOM.render(<App />, document.getElementById('root'));
->>>>>>> 75a4563 (Done)
+

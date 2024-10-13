@@ -1,0 +1,94 @@
+/* Profile Picture Container */
+.profile-pic-container {
+    position: relative;
+    width: 150px; /* Ensure equal width and height */
+    height: 150px;
+    margin: 0 auto; /* Center the profile picture horizontally */
+    margin-bottom: 20px; /* Add some space between the picture and the name */
+  }
+  
+  /* Profile Picture */
+  .profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image maintains its aspect ratio */
+    border-radius: 50%; /* Circular shape */
+    border: 5px solid #fd9b85; /* Coral color for profile picture border */
+    transition: all 0.3s ease;
+  }
+  
+  /* Edit Photo Overlay */
+  .edit-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    color: white;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent dark background */
+    border-radius: 50%; /* Maintain the circular shape */
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+  }
+  
+  /* Show the overlay on hover */
+  .profile-pic-container:hover .edit-overlay {
+    opacity: 1;
+  }
+  
+  /* Hidden File Input */
+  .profile-pic-upload {
+    display: none;
+  }
+  
+  /* Profile Info and Button */
+  .profile-info {
+    display: flex;
+    flex-direction: column; /* Ensure vertical alignment */
+    align-items: center; /* Center the name, bio, and button */
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px; /* Add margin to prevent overlap */
+  }
+  
+  .profile-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px; /* Add space between name/bio and button */
+  }
+  
+  .profile-name {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px; /* Add space between name and bio */
+  }
+  
+  .profile-bio {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 20px; /* Add space between bio and edit button */
+  }
+  
+  /* Edit Profile Button */
+  .profile-btn {
+    padding: 10px 20px;
+    background-color: #fd9b85; /* Coral color for the button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .profile-btn:hover {
+    background-color: #ff7155; /* Darker coral on hover */
+  }
+  
